@@ -9,7 +9,13 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
+    let arrsum = 0
+    for (let i = 0; i < str1.length; i++) {
+        for (let j = 0; j < str2.length; j++) {
+          if (arr1[i] === arr2[j]) 
+          {arrsum += 1 }
+        }
+      }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

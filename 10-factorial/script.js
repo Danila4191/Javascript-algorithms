@@ -8,7 +8,10 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    let sum = 1
+    for(let i = 0; i < n ; i++){
+        sum += sum * i}
+    return sum
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
