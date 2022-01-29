@@ -7,20 +7,19 @@
  */
 
 function countZeros(n) {
-  let arr = "";
-  let arr4 = 0;
+ let str = "";
+ let count = 0;
   for (let i = 1; i <= n; i++) {
-    arr += i;
+    str += i;
   }
-  const arr2 = arr.split("");
-  const arr3 = arr2.map(Number);
-  for (let j = 0; j < arr3.length; j++) {
-    if (arr3[j] === 0) {
-      arr4 += 1;
+  const strNumber = str.split("");
+  const arrNumber = strNumber.map(Number);
+  for (let j = 0; j < arrNumber.length; j++) {
+    if (arrNumber[j] === 0) {
+      count += 1;
     }
   }
-
-  return arr4;
+  return count;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

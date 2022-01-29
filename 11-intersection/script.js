@@ -8,21 +8,21 @@
  */
 
 function intersection(arr1, arr2) {
-  let arrNew = "";
+  let str = "";
   for (let i = 0; i < arr1.length; i++) {
     for (let j = 0; j < arr2.length; j++) {
       if (arr1[i] === arr2[j]) {
-        arrNew += arr1[i] + " ";
+        str += arr1[i] + " ";
       }
     }
   }
-  const arrNewB = arrNew.split(" ");
-  arrNewB.pop();
-  const arrNewC = arrNewB.filter((count, index) => {
-    return arrNewB.indexOf(count) === index;
+  const arr = str.split(" ");
+  arr.pop();
+  const arrNew = arr.filter((count, index) => {
+    return arr.indexOf(count) === index;
   });
-  const arrNewD = arrNewC.map(Number);
-  return arrNewD;
+  
+  return arrNew.map(Number) 
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

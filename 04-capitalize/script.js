@@ -7,17 +7,17 @@
  */
 
 function capitalize(str) {
-  const strA = str.split(" ");
+  const arrA = str.split(" ");
   let strNew = "";
-  for (let i = 0; i < strA.length; i++) {
-    let strItem = strA[i];
+  for (let i = 0; i < arrA.length; i++) {
+    let strItem = arrA[i];
     strNew +=
       strItem.substring(0, 1).toUpperCase() + strItem.substring(1) + " ";
   }
-  const strB = strNew.split(" ");
-  strB.pop();
-  const strC = strB.toString();
-  return strC.replace(/,/g, " ");
+  const arrB = strNew.split(" ");
+  arrB.pop();
+  const arrC = arrB.toString();
+  return arrC.replace(/,/g, " ");
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -11,17 +11,17 @@
 
 function findVowels(str) {
   const vowel = ["а", "я", "о", "ё", "у", "ю", "ы", "и", "э", "е"];
-  const strA = str.toLowerCase()
-  const strB = strA.split("");
-  let vewelC = 0;
+  const arrA = str.toLowerCase()
+  const arrB = arrA.split("");
+  let vowelCount = 0;
   
-  for (let i = 0; i < strB.length; i++) {
+  for (let i = 0; i < arrB.length; i++) {
     for (let j = 0; j < vowel.length; j++) {
-      if (strB[i] === vowel[j])
-       { vewelC += 1}
+      if (arrB[i] === vowel[j])
+       { vowelCount += 1}
     }
   }
-  return vewelC 
+  return vowelCount
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

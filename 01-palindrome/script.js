@@ -18,14 +18,12 @@ function palindrome(str) {
   const strSR = strLower.split("").reverse();
   const strS = strLower.split("");
   const N = strLower.length / 2;
-  const a = strS.slice(0, N);
-  const b = strSR.slice(0, N);
-
+  
   if (str.length == 0) {
     return true;
   } else if (
     (str.length !== 0) &
-    (a.sort().toString() == b.sort().toString())
+    (strS.slice(0, N).sort().toString() == strSR.slice(0, N).sort().toString())
   ) {
     return true;
   } else {
