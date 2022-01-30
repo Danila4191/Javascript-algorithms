@@ -16,8 +16,8 @@ function capitalize(str) {
   }
   const arrB = strNew.split(" ");
   arrB.pop();
-  const arrC = arrB.toString();
-  return arrC.replace(/,/g, " ");
+  const resultStr = arrB.toString();
+  return resultStr.replace(/,/g, " ");
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
